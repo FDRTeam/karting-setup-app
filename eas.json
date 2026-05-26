@@ -21,9 +21,9 @@
   "submit": {
     "production": {
       "ios": {
-        "ascApiKeyPath": "./AuthKey_T3S873NC28.p8",
+        "ascApiKeyPath": "./AuthKey_5L6K92665H.p8",
         "ascApiKeyIssuerId": "6e61dab4-28a1-4100-ac0b-c1e38494a0e3",
-        "ascApiKeyId": "T3S873NC28"
+        "ascApiKeyId": "5L6K92665H"
       }
     }
   }
