@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 19.1.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "ios": {
+        "appStoreConnectApi": {
+          "keyId": "5L6K92665H",
+          "issuerId": "6e61dab4-28a1-4100-ac0b-c1e38494a0e3",
+          "keyPath": "./AuthKey_5L6K92665H.p8"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
