@@ -1,24 +1,12 @@
-require("./scripts/load-env.js");
+// Simplified app.config.js for EAS Build compatibility
+// Removed load-env.js dependency to avoid config resolution issues in EAS Cloud
 
-const rawBundleId = "space.manus.karting.setup.app.t20260316084908";
-const bundleId =
-  rawBundleId
-    .replace(/[-_]/g, ".")
-    .replace(/[^a-zA-Z0-9.]/g, "")
-    .replace(/\.+/g, ".")
-    .replace(/^\.+|\.+$/g, "")
-    .toLowerCase()
-    .split(".")
-    .map((segment) => {
-      return /^[a-zA-Z]/.test(segment) ? segment : "x" + segment;
-    })
-    .join(".") || "space.manus.app";
-
-const timestamp = bundleId.split(".").pop()?.replace(/^t/, "") ?? "";
+const bundleId = "space.manus.karting.setup.app.t01fd58f6";
+const timestamp = "01fd58f6";
 const schemeFromBundleId = `manus${timestamp}`;
 
 const env = {
-  appName: "FDR Kart Setup Data",
+  appName: "Karting Setup Pro",
   appSlug: "karting-setup-app",
   logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663441702146/Fftu9JQd2wjiu6sz88Saj8/icon-7gJpNfXxgfafkTFn7tJmNk.webp",
   scheme: schemeFromBundleId,
