@@ -1,8 +1,8 @@
 // Simplified app.config.js for EAS Build compatibility
 // Removed load-env.js dependency to avoid config resolution issues in EAS Cloud
 
-const bundleId = "space.manus.karting.setup.app.t01fd58f6";
-const timestamp = "01fd58f6";
+const bundleId = "space.manus.karting.setup.app.t20240115103045";
+const timestamp = "20240115103045";
 const schemeFromBundleId = `manus${timestamp}`;
 
 const env = {
